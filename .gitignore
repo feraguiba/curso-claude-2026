@@ -1,0 +1,18 @@
+# Dependencias
+node_modules/
+
+# Bases de datos locales
+*.db
+*.db-journal
+
+# Caché y builds
+.angular/
+dist/
+coverage/
+
+# Entorno
+.env
+.env.*
+
+# Sistema
+.DS_Store
