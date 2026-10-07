@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "tool-call": {
+      "filter": {
+        "tool": "Read",
+        "params": {
+          "file_path": "*constants.cs"
+        }
+      },
+      "block": {
+        "message": "No puedo leer archivos que has protegido con hooks"
+      }
+    }
+  }
+}

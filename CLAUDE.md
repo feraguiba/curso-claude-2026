@@ -15,6 +15,16 @@ Documentación de referencia en `docs/` (léela antes de cambios grandes):
 - `docs/arquitectura/arquitectura-frontend.md` — patrón Store, auth, routing.
 - `docs/dominio/modelo-datos.md` y `docs/dominio/glosario.md` — esquema SQL y vocabulario.
 
+## Documentation
+
+- `docs`
+-- `api`
+--- `openapi`
+---- `openapi.yaml`: especificación de openapi de nuestra api.
+--- `guidelines`
+---- `api-pagination.md`: indica como paginar los resultados de las peticiones get.
+
+
 ## Comandos
 
 Desde la raíz:
