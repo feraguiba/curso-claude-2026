@@ -3,7 +3,7 @@
     <div class="login-header">
       <img src="/assets/images/logo.png" alt="RestTek" class="login-logo">
       <h1>RestTek</h1>
-      <p>Accede a tu panel de gestión</p>
+      <p>Únete al lado oscuro: accede a tu panel de gestión</p>
     </div>
 
     @if (error()) {
@@ -41,9 +41,9 @@
 
       <button type="submit" class="btn btn-primary login-btn" [disabled]="loading()">
         @if (loading()) {
-          <span>Accediendo...</span>
+          <span>Cediendo a la Fuerza...</span>
         } @else {
-          <span>Iniciar sesión</span>
+          <span>Entrar al lado oscuro</span>
         }
       </button>
     </form>

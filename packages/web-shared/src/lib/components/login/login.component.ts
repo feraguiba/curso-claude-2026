@@ -27,7 +27,7 @@ export class LoginComponent {
       await this.authService.login(this.email, this.password)
       this.router.navigate(['/'])
     } catch {
-      this.error.set('Credenciales inválidas. Inténtalo de nuevo.')
+      this.error.set('Tu falta de fe resulta perturbadora. Credenciales inválidas, inténtalo de nuevo.')
     } finally {
       this.loading.set(false)
     }

@@ -27,7 +27,7 @@ export class RegisterComponent {
     this.error.set(null)
 
     if (this.password !== this.confirmPassword) {
-      this.error.set('Las contraseñas no coinciden')
+      this.error.set('Las contraseñas no coinciden. No subestimes el poder del lado oscuro')
       return
     }
 
@@ -41,7 +41,7 @@ export class RegisterComponent {
       await this.authService.register(this.firstName, this.lastName, this.email, this.password)
       this.router.navigate(['/'])
     } catch {
-      this.error.set('Error al registrar. Inténtalo de nuevo.')
+      this.error.set('Has fallado al registrarte. No me falles de nuevo, inténtalo otra vez.')
     } finally {
       this.loading.set(false)
     }

@@ -45,6 +45,7 @@ export class AuthService {
   }
 
   logout(): void {
+    if (!confirm('¿Quieres salir del lado oscuro?')) return
     this.store.clearSession()
     this.router.navigate(['/login'])
   }

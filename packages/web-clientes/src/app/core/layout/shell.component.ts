@@ -185,6 +185,7 @@ export class ShellComponent {
   readonly itemCount = computed(() => this.cartStore.itemCount())
 
   logout(): void {
+    if (!confirm('¿Quieres salir del lado oscuro?')) return
     this.authStore.clearSession()
   }
 }

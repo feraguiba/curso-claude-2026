@@ -3,7 +3,7 @@
     <div class="login-header">
       <lucide-icon name="utensils" [size]="32"></lucide-icon>
       <h1>RestTek</h1>
-      <p>Crea tu cuenta de cliente</p>
+      <p>Únete al Imperio: crea tu cuenta de cliente</p>
     </div>
 
     @if (error()) {
@@ -85,15 +85,15 @@
 
       <button type="submit" class="btn btn-primary login-btn" [disabled]="loading()">
         @if (loading()) {
-          <span>Registrando...</span>
+          <span>Forjando tu destino...</span>
         } @else {
-          <span>Crear cuenta</span>
+          <span>Unirme al lado oscuro</span>
         }
       </button>
     </form>
 
     <p class="login-footer">
-      ¿Ya tienes cuenta? <a routerLink="/login">Inicia sesión</a>
+      ¿Ya eres un Sith? <a routerLink="/login">Inicia sesión</a>
     </p>
   </div>
 </div>
